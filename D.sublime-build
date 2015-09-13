@@ -11,8 +11,8 @@
     },
     {
       "name": "dub",
-      "working_dir": "$project_path",
-      "cmd": ["dub"]
+      "working_dir": "${project_path:${folder}}",
+      "cmd": ["dub", "run"],
     }
   ]
 }
